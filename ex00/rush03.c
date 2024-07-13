@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_putchar.c"
+void	ft_putchar(char chr);
 
 void	print_line_middle(int x)
 {

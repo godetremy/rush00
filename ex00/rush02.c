@@ -6,17 +6,17 @@
 /*   By: rgodet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 08:45:01 by rgodet            #+#    #+#             */
-/*   Updated: 2024/07/13 10:34:22 by rgodet           ###   ########.fr       */
+/*   Updated: 2024/07/13 10:45:33 by rgodet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_putchar.c"
+void	ft_putchar(char chr);
 
-void print_line_middle(int x)
+void	print_line_middle(int x)
 {
 	x--;
 	ft_putchar('B');
-	while(x > 1)
+	while (x > 1)
 	{
 		ft_putchar(' ');
 		x--;
@@ -26,11 +26,11 @@ void print_line_middle(int x)
 	ft_putchar(10);
 }
 
-void print_line_ac(int x, char c)
+void	print_line_ac(int x, char c)
 {
 	x--;
 	ft_putchar(c);
-	while(x > 1)
+	while (x > 1)
 	{
 		ft_putchar('B');
 		x--;
@@ -40,13 +40,13 @@ void print_line_ac(int x, char c)
 	ft_putchar(10);
 }
 
-void rush(int x, int y)
+void	rush(int x, int y)
 {
 	if (x <= 0 || y <= 0)
 		return ;
 	y--;
 	print_line_ac(x, 'A');
-	while(y > 1)
+	while (y > 1)
 	{
 		print_line_middle(x);
 		y--;

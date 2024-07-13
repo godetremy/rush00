@@ -6,14 +6,14 @@
 /*   By: rgodet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 08:36:28 by rgodet            #+#    #+#             */
-/*   Updated: 2024/07/13 08:48:46 by rgodet           ###   ########.fr       */
+/*   Updated: 2024/07/13 11:56:31 by rgodet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rush02.c"
+void	rush(int x, int y);
 
-int main(void)
+int	main(void)
 {
-	rush(5,5);
-	return 0;
+	rush(5, 5);
+	return (0);
 }
